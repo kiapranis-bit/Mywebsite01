@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ntea Illustration</title>
+
+  <link rel="icon" href="assets/image2.png" type="image/png">
+  <link rel="stylesheet" href="Shopstyles.css">
+
+  <!-- Fabric Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/5.2.4/fabric.min.js"></script>
+  
+
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar">
+  <div class="logo">
+  <a href="#"><img src="assets/image2.png" alt="Logo" class="logo-img1"></a>
+  <a href="#"><img src="assets/image1.png" alt="Alt Logo" class="logo-img2"></a>
+</div>
+
+
+  <h1>NTEA ILLUSTRATIONS AND DESIGNS</h1>
+
+  <ul class="nav-menu">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="AboutUs.html">About Us</a></li>
+    <li><a href="#about">Our Shop</a></li>
+    <li><a href="news.html">News</a></li>
+  </ul>
+</nav>
+<!-- ================= Our Shop================= -->
+<!-- ===================== -->
+<!-- AVAILABLE PRODUCTS -->
+<!-- ===================== -->
+
+<section class="shop-section">
+
+    <h2 class="shop-title">Available Products</h2>
+
+    <div class="product-display">
+
+        <!-- PRODUCT 1 -->
+        <div class="product active">
+            <img src="assets/DTF03.webp" alt="Custom Tee">
+            <div class="product-info">
+                <h3>Custom Graphic Tee</h3>
+                <p class="price">K80</p>
+                <p class="description">
+                    High-quality cotton t-shirt with vibrant digital illustration print.
+                </p>
+                <a href="OrderProduct.html" class="order-btn">Order Now</a>
+            </div>
+        </div>
+
+        <!-- PRODUCT 2 -->
+        <div class="product">
+            <img src="assets/DTF02.webp" alt="Premium Hoodie">
+            <div class="product-info">
+                <h3>Premium Hoodie</h3>
+                <p class="price">K150</p>
+                <p class="description">
+                    Premium hoodie with durable high-resolution DTF print.
+                </p>
+                <a href="OrderProduct.html" class="order-btn">Order Now</a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+<!-- ===================== -->
+<!-- DTF SECTION -->
+<!-- ===================== -->
+
+<section class="dtf-section">
+
+    <h2>DTF Printing Services</h2>
+
+    <div class="dtf-container">
+
+        <div class="dtf-card">
+            <img src="assets/SmallDt01.jpg" alt="Small DTF">
+            <h3>Small T-Shirts Print</h3>
+            <p class="price">K30</p>
+            <p>High-quality DTF transfer for small apparel prints.</p>
+        </div>
+
+        <div class="dtf-card">
+            <img src="assets/MediumDt01.png" alt="Medium DTF">
+            <h3>Medium T-Shirts Print</h3>
+            <p class="price">K50</p>
+            <p>High-quality DTF transfer for medium apparel prints.</p>
+        </div>
+
+        <div class="dtf-card">
+            <img src="assets/LargeDt01.webp" alt="Large DTF">
+            <h3>Large T-Shirts Print</h3>
+            <p class="price">K80</p>
+            <p>Large vibrant DTF transfer ideal for hoodies and oversized prints.</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ============================ designer section ====================== -->
+
+<section class="designer-section">
+
+  <h2>Customize Your T-Shirt</h2>
+
+  <div class="designer-container">
+    <canvas id="tshirtCanvas"></canvas>
+  </div>
+
+  <div class="designer-controls">
+
+    <label>Upload Your Design:</label>
+    <input type="file" id="uploadDesign" accept="image/*">
+
+    <label>Select Print Size:</label>
+    <select id="sizeSelector">
+      <option value="a5">A5</option>
+      <option value="a4">A4</option>
+      <option value="a3">A3</option>
+    </select>
+
+  </div>
+
+  <!-- Hidden Inputs Connected To Form -->
+  <input type="hidden" name="design_x" id="design_x">
+  <input type="hidden" name="design_y" id="design_y">
+  <input type="hidden" name="design_width" id="design_width">
+  <input type="hidden" name="design_height" id="design_height">
+
+</section>
+
+
+
+<script src="shop-designer.js"></script>
+
+
+
+
+
+<!-- ================= FOOTER ================= -->
+<section class="footer-section">
+  <div class="footer-container">
+
+    <div class="footer-left">
+      <div class="footer-logo">
+  <img src="assets/image2.png" alt="Footer Logo">
+</div>
+
+      <h4>Ntea Illustration And Design</h4>
+      <p>
+        100% PNG Owned<br>
+        Designing Company<br>
+        All Rights Reserved<br>
+        © 2025
+      </p>
+      <a href="#" class="btn-contact">CONTACT US</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>DISCOVER</h4>
+      <ul>
+        <li><a href="#">Our Board</a></li>
+        <li><a href="#">Management</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Our Foundation</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>BUSINESS</h4>
+      <ul>
+        <li><a href="#">Why Ntea</a></li>
+        <li><a href="#">Prices</a></li>
+        <li><a href="#">Specials</a></li>
+        <li><a href="#">Location</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    © 2025 Ntea.I.D Group. All Rights Reserved.
+  </div>
+</section>
+
+<script src="script.js"></script>
+
+
+</body>
+</html>
+

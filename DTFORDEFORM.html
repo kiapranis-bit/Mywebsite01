@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ntea Illustration</title>
+
+  <!-- Favicon (fixed) -->
+  <link rel="icon" href="assets/image2.png" type="image/png">
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="Shopstyles.css">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar">
+  <div class="logo">
+  <a href="#"><img src="assets/image2.png" alt="Logo" class="logo-img1"></a>
+  <a href="#"><img src="assets/image1.png" alt="Alt Logo" class="logo-img2"></a>
+</div>
+
+
+  <h1>NTEA ILLUSTRATIONS AND DESIGNS</h1>
+
+  <ul class="nav-menu">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="AboutUs.html">About Us</a></li>
+    <li><a href="#about">Our Shop</a></li>
+    <li><a href="news.html">News</a></li>
+  </ul>
+</nav>
+<!-- ================= Dtf order form================= -->
+
+
+<!-- ===================== -->
+<!-- DTF ORDER MODAL -->
+<!-- ===================== -->
+
+<div class="modal" id="dtfModal">
+    <div class="modal-content">
+        <span class="close-dtf">&times;</span>
+        <h3>DTF Order Form</h3>
+
+        <!-- MAILTO FORM -->
+        <form action="mailto:your@email.com"
+              method="POST"
+              enctype="multipart/form-data">
+
+            <input type="text" name="Name" placeholder="Full Name" required><br>
+            <input type="email" name="Email" placeholder="Email Address" required><br>
+
+            <!-- PDF & IMAGE ONLY -->
+            <input type="file" name="DesignFile"
+                   accept=".pdf,image/*" required><br>
+
+            <textarea name="Details" placeholder="Print Size / Details"></textarea><br>
+
+            <button type="submit">Submit DTF Request</button>
+
+        </form>
+    </div>
+</div>
+
+
+
+<!-- ================= FOOTER ================= -->
+<section class="footer-section">
+  <div class="footer-container">
+
+    <div class="footer-left">
+      <div class="footer-logo">
+  <img src="assets/image2.png" alt="Footer Logo">
+</div>
+
+      <h4>Ntea Illustration And Design</h4>
+      <p>
+        100% PNG Owned<br>
+        Designing Company<br>
+        All Rights Reserved<br>
+        © 2025
+      </p>
+      <a href="#" class="btn-contact">CONTACT US</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>DISCOVER</h4>
+      <ul>
+        <li><a href="#">Our Board</a></li>
+        <li><a href="#">Management</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Our Foundation</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>BUSINESS</h4>
+      <ul>
+        <li><a href="#">Why Ntea</a></li>
+        <li><a href="#">Prices</a></li>
+        <li><a href="#">Specials</a></li>
+        <li><a href="#">Location</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    © 2025 Ntea.I.D Group. All Rights Reserved.
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
