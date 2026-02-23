@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
       });
 
       // Load T-shirt Background
-      fabric.Image.fromURL("assets/T-Shirt.webp", function (img) {
+      fabric.Image.fromURL("T-Shirt.webp", function (img) {
         img.scaleToWidth(400);
         img.selectable = false;
         canvas.setBackgroundImage(img, canvas.renderAll.bind(canvas));
@@ -80,3 +80,4 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
 });
+
