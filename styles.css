@@ -463,19 +463,23 @@ position: absolute;
   }
 
   /* BUTTON CENTER */
-  .button-container {
+.button-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
     position: relative;
     top: auto;
     left: auto;
     transform: none;
-    margin-top: 30px;
-    flex-direction: column;
-    align-items: center;
+    margin-top: 25px;
   }
 
+
   .btn {
-    width: 80%;
-    text-align: center;
+    padding: 10px 28px;   /* smaller padding */
+    font-size: 14px;      /* smaller text */
+    border-radius: 50px;  /* rounded like .abtn */
+    width: auto;          /* prevent full width */
   }
 
   /* HERO IMAGE */
@@ -577,4 +581,5 @@ position: absolute;
   }
 
 }
+
 
