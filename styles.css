@@ -532,3 +532,49 @@ position: absolute;
 }
 
 
+
+/* hamburger*/
+
+/* ================= HAMBURGER MENU ================= */
+
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+  .brand-title {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-menu {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    background: white;
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    display: none;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    padding: 20px 0;
+  }
+
+  .nav-menu li {
+    margin: 10px 0;
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+
+}
+
