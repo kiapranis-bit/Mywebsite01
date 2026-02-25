@@ -479,7 +479,7 @@ position: absolute;
     padding: 10px 28px;   /* smaller padding */
     font-size: 14px;      /* smaller text */
     border-radius: 50px;  /* rounded like .abtn */
-    width: auto;          /* prevent full width */
+    width: 50px;          /* prevent full width */
   }
 
   /* HERO IMAGE */
@@ -581,5 +581,6 @@ position: absolute;
   }
 
 }
+
 
 
