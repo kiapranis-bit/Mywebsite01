@@ -192,13 +192,10 @@ position: absolute;
 }
 
 .hero-front-image img {
-width: 129vh;
-  height: 120vh;
-  object-fit: cover;
-
- 
+  width: 100%;
+  height: auto;
+  object-fit: contain;
 }
-
 @keyframes heroFloat {
   0% { transform: translateY(0); }
   50% { transform: translateY(-12px); }
@@ -402,4 +399,136 @@ width: 129vh;
   width: auto;
   display: block;
 }
+
+
+/**************** mobile view set up********************/
+
+@media (max-width: 1024px) {
+
+  .navbar h1 {
+    font-size: 18px;
+  }
+
+  .hero-front-image {
+    width: 40%;
+  }
+
+  .hero-title h1 {
+    font-size: 34px;
+  }
+
+  .hero-title h2 {
+    font-size: 18px;
+  }
+
+}
+
+/********** Mobile Devices (max-width: 768px *********/
+
+@media (max-width: 768px) {
+
+  /* NAVBAR STACK */
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+    padding: 15px;
+    max-height: none;
+  }
+
+  .navbar h1 {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 10px;
+  }
+
+  /* HERO FIX */
+  .hero-section {
+    height: auto;
+    padding: 80px 20px;
+  }
+
+  .hero-title h1 {
+    font-size: 26px;
+    text-align: center;
+  }
+
+  .hero-title h2 {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  /* BUTTON CENTER */
+  .button-container {
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+    margin-top: 30px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn {
+    width: 80%;
+    text-align: center;
+  }
+
+  /* HERO IMAGE */
+  .hero-front-image {
+    position: relative;
+    width: 70%;
+    margin: 40px auto 0;
+    right: auto;
+    bottom: auto;
+  }
+
+  /* FOOTER STACK */
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .footer-logo {
+    justify-content: center;
+  }
+
+}
+
+/*************** Small Phones (max-width: 480px)*******************/
+
+@media (max-width: 480px) {
+
+  .hero-title h1 {
+    font-size: 22px;
+  }
+
+  .hero-title h2 {
+    font-size: 14px;
+  }
+
+  .btn {
+    width: 100%;
+    padding: 14px;
+  }
+
+  .about-section {
+    padding: 60px 6%;
+  }
+
+  .about-content p {
+    font-size: 15px;
+  }
+
+  .number {
+    font-size: 34px;
+  }
+
+}
+
 
