@@ -93,36 +93,9 @@ a:hover {
   position: relative;
 }
 
-.hero-title h1 {
-  font-size: 42px;
-  font-weight: bold;
-  margin-bottom: 12px;
-
-text-align:right;
-}
 
 
 
-.hero-title h2 {
-  font-size: 22px;
-  font-weight: normal;
-  color: black;
-	text-align:right;
-}
-
-.hero-title {
-  position: relative;
-  z-index: 3; /* higher than background + overlay */
-  text-align: center;
-}
-
-
-
-.hero-section {
-  position: relative;
-  height: 100vh;
-  overflow: hidden;
-}
 
 
 .button-container {
@@ -160,31 +133,32 @@ text-align:right;
 
 
 
-
+/* HERO TITLE (Top Layer) */
 .hero-title {
   position: relative;
-  z-index: 2;
-  color: #fff;
+  z-index: 3;        /* THIS makes it appear on top */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.hero-title h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.hero-title h2 {
+  font-size: 20px;
+  font-weight: 300;
 }
 
 
-.hero-bg-slider {
-  position: absolute;
-  inset: 0;
-}
 
-.hero-bg-slider span {
-  position: absolute;
-  inset: 0;
-  background-size: cover;
-  background-position: center;
-  opacity: 0;
-  transition: opacity 1.5s ease-in-out;
-}
 
-.hero-bg-slider span.active {
-  opacity: 1;
-}
 
 /* ================= FULL SCREEN HERO SLIDER ================= */
 
@@ -200,7 +174,10 @@ text-align:right;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;         /* Fill parent */
+  height: 100%; /* Fill parent */
+	inset:0;
+  z-index: 1;
+
 }
 
 .hero-bg-slider span {
@@ -246,6 +223,8 @@ text-align:right;
 /* Purple semi circle overlay */
 .hero-purple-overlay {
     position: absolute;
+	inset:0;
+	z-index:2;
     top: 50%;
     right: -250px;
     transform: translateY(-50%);
@@ -737,6 +716,7 @@ text-align:right;
   }
 
 }
+
 
 
 
