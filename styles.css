@@ -135,21 +135,27 @@ text-align:right;
 }
 
 .btn {
-  background: blue;
-  color: white;
-  padding: 14px 28px;
-  border-radius: 6px;
-  font-weight: bold;
-  text-decoration: none;
-  font-size: 16px;
-  transition: 0.3s ease;
-  cursor: pointer;
+    display: inline-block;
+    padding: 14px 40px;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 50px;
+    background: #111;
+    color: #fff;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
 }
 
+
+
+
 .btn:hover {
-  background: Yellow;
-  color: black;
+    background: #000;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
 }
+
 
 
 
@@ -180,22 +186,82 @@ text-align:right;
   opacity: 1;
 }
 
-.hero-front-image {
-position: absolute;
-  right: 7%;
-  bottom: 0;
-  width: 25%;
-  max-width: 380px;
-  z-index: 2; /* above background, below text/buttons */
+/* ================= FULL SCREEN HERO SLIDER ================= */
 
-
-}
-
-.hero-front-image img {
+.hero-slider {
+  position: relative;
+  height: 100vh;        /* Full screen height */
   width: 100%;
-  height: auto;
-  object-fit: contain;
+  overflow: hidden;
 }
+
+.hero-bg-slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;         /* Fill parent */
+}
+
+.hero-bg-slider span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;      /* Fill screen without distortion */
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+}
+
+.hero-bg-slider span.active {
+  opacity: 1;
+}
+
+
+
+@keyframes heroFloat {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+  100% { transform: translateY(0); }
+}
+
+/* ================= HERO PURPLE SEMI CIRCLE ================= */
+
+.hero-bg-slider {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Keep your slider spans full screen */
+.hero-bg-slider span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Purple semi circle overlay */
+.hero-purple-overlay {
+    position: absolute;
+    top: 50%;
+    right: -250px;
+    transform: translateY(-50%);
+    width: 700px;
+    height: 700px;
+    background: radial-gradient(circle at center,
+        rgba(128, 0, 128, 0.9) 0%,
+        rgba(128, 0, 128, 0.7) 35%,
+        rgba(128, 0, 128, 0.5) 55%,
+        rgba(128, 0, 128, 0.2) 70%,
+        rgba(128, 0, 128, 0) 80%);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 2;
+}
+
 @keyframes heroFloat {
   0% { transform: translateY(0); }
   50% { transform: translateY(-12px); }
@@ -671,6 +737,7 @@ position: absolute;
   }
 
 }
+
 
 
 
