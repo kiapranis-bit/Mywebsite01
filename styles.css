@@ -87,15 +87,42 @@ a:hover {
 /*============================ Hero section======================================*/
 
 .hero-section {
-
-  padding: 50px 20px;
+  
+  padding: 90px 20px;
   background: #eef2f5;
   position: relative;
 }
 
+.hero-title h1 {
+  font-size: 42px;
+  font-weight: bold;
+  margin-bottom: 12px;
+
+text-align:right;
+}
 
 
 
+.hero-title h2 {
+  font-size: 22px;
+  font-weight: normal;
+  color: black;
+	text-align:right;
+}
+
+.hero-title {
+  position: relative;
+  z-index: 3; /* higher than background + overlay */
+  text-align: center;
+}
+
+
+
+.hero-section {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
 
 
 .button-container {
@@ -132,32 +159,11 @@ a:hover {
 
 
 
-
-/* HERO TITLE (Top Layer) */
 .hero-title {
   position: relative;
-  z-index: 3;        /* THIS makes it appear on top */
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: white;
+  z-index: 2;
+  color: #fff;
 }
-
-.hero-title h1 {
-  font-size: 48px;
-  margin-bottom: 10px;
-}
-
-.hero-title h2 {
-  font-size: 20px;
-  font-weight: 300;
-}
-
-
-
 
 
 /* ================= FULL SCREEN HERO SLIDER ================= */
@@ -174,10 +180,7 @@ a:hover {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%; /* Fill parent */
-	inset:0;
-  z-index: 1;
-
+  height: 100%;         /* Fill parent */
 }
 
 .hero-bg-slider span {
@@ -223,8 +226,6 @@ a:hover {
 /* Purple semi circle overlay */
 .hero-purple-overlay {
     position: absolute;
-	inset:0;
-	z-index:2;
     top: 50%;
     right: -250px;
     transform: translateY(-50%);
@@ -240,14 +241,6 @@ a:hover {
     pointer-events: none;
     z-index: 2;
 }
-
-@keyframes heroFloat {
-  0% { transform: translateY(0); }
-  50% { transform: translateY(-12px); }
-  100% { transform: translateY(0); }
-}
-
-
 
 /*==================================== about section=================*/
 
@@ -716,6 +709,7 @@ a:hover {
   }
 
 }
+
 
 
 
